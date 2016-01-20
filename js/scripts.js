@@ -26,13 +26,6 @@ if (word.match(/^[^AEIOUaeiou]/)){
 
 }
 
-var appendAy = function(word) {
-  if (beginWithVowel(word) === true) {
-    return word.concat("ay");
-  } else (beginWithConsonant === true)
-    return removeLeadingConsonantsAndAppend(word).concat("ay");
-}
-
 /*
 1. If a word begins with a consonant find all leading consonants of that word
 2. store all leading consonants in a variable called ConsonantTrimmings
@@ -47,6 +40,28 @@ if (beginWithConsonant(word) === true) {
 }
 
 }
+
+
+/*
+1. If a word begins with a consonant find all leading consonants of that word
+2. store all leading consonants in a variable called ConsonantTrimmings
+3. Remove value of ConsonantTrimmings from beginning of word and append to word
+*/
+var appendAy = function(word) {
+  if (beginWithVowel(word) === true) {
+    return word.concat("ay");
+  } else (beginWithConsonant === true)
+    return removeLeadingConsonantsAndAppend(word).concat("ay");
+}
+
+
+test = "hello mike how is your day going"
+test2 = test.split(" ")
+result ="";
+test2.forEach(function(word) {
+    result += appendAy(word) + " ";
+});
+
 
 
 // UI Logic

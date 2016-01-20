@@ -1,5 +1,22 @@
 //Business Logic
 //
+
+var beginWithVowel = function(word) {
+if (word.match(/^[AEIOUaeiou]/)){
+    return true;
+} else {
+  return false;
+}
+};
+
+var appendAy = function(word) {
+  if (beginWithVowel(word) === true) {
+    return word.concat("ay");
+  } 
+}
+
+
+
 // var leapYear = function(year) {
 //
 // 	// return ((year % 4 === 0) && (year % 100 != 0) || (year % 400 === 0));
@@ -20,7 +37,7 @@
 // } else {
 // return false;
 // }
-// };
+
 
 // UI Logic
 

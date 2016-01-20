@@ -1,7 +1,8 @@
-// describe ('leapYear', function() {
-// 	it("is false for a year that is not divisible by 4, 100, or 400", function() {
-// 		expect(leapYear(1993)).to.equal(false);
-// 	});
+describe ('appendAy', function() {
+	it("if word begins with a vowel (a,e,i,o,u), append 'ay' to the word", function() {
+		expect(appendAy("apple")).to.equal("appleay");
+	});
+
 //
 // 	it ("is true for years divisible by 4", function() {
 // 		expect(leapYear(2004)).to.equal(true);
@@ -22,4 +23,4 @@
 // 	it ("is false for negavtive integers", function() {
 // 		expect (leapYear(-400)).to.equal(false);
 // 	});
-// });
+});
